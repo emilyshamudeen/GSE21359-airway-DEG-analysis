@@ -39,3 +39,26 @@ Gene annotation is retrieved using fData and merged into the results table. Volc
 7. Gene of interest lookup
 Results for specific genes of interest are extracted by GenBank accession ID. CXCL14 (NM_004887), the primary study gene, and NKX3-1 (NM_006167), a lung epithelial transcription factor, are checked across all three contrasts.
 
+## PCA Plot 
+<img width="1350" height="900" alt="image" src="https://github.com/user-attachments/assets/f81bbcfe-078c-4b00-949f-abf98598b820" />
+
+## Correlation Heatmap
+<img width="2700" height="2400" alt="image" src="https://github.com/user-attachments/assets/bc7bb063-52fb-425a-aa51-59ef5b6ef010" />
+
+## Volcano Plot: Healthy Smoker vs Non-Smoker
+<img width="1200" height="900" alt="image" src="https://github.com/user-attachments/assets/3ea2878d-d594-49d7-bb0a-a3118936facf" />
+
+## Volcano Plot — COPD vs Non-Smoker
+<img width="1200" height="900" alt="image" src="https://github.com/user-attachments/assets/22d8fa6d-cab5-406f-8fb8-025e20e1414a" />
+
+## Volcano Plot — COPD vs Healthy Smoker 
+<img width="1200" height="900" alt="image" src="https://github.com/user-attachments/assets/824ae5e3-88d3-4c8d-9739-852dd69ab678" />
+
+## R packages used 
+- GEOquery — download data from NCBI GEO
+- limma — differential expression analysis
+- ggplot2 — data visualisation
+- ggrepel — label positioning in plots
+- pheatmap — correlation heatmap
+- dplyr — data manipulation
+- stringr — string detection for group assignment
