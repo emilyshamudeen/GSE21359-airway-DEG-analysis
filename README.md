@@ -1,2 +1,4 @@
 #   Differential-Gene-Expression-Analysis-of-Human-Airway-Epithelium
-Differential gene expression analysis of lung airway epithelium in smokers and COPD patients using limma
+
+## Introduction 
+This R script shows the downloading of GSE data from the NCBI GEO database and how to obain differenially expressed genes from microarray data.
