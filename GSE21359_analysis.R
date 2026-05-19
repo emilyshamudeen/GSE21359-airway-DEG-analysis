@@ -16,7 +16,7 @@ pData(gse)   ## sample information
 fData(gse)   ## gene annotation
 exprs(gse)   ## expression matrix
 
-# Check normalisation and scale of expression values
+# Check normalization and scale of expression values
 
 # Check what processing has already been applied
 pData(gse)$data_processing[1]
@@ -24,13 +24,13 @@ pData(gse)$data_processing[1]
 # Summarise expression values — RMA data should be log2 (range 0–16)
 summary(exprs(gse))
 
-# Values look fine — data is already RMA normalised and log2 transformed
-# If values exceeded 16 you would log2 transform here: exprs(gse) <- log2(exprs(gse))
+# Values look fine — data is already RMA normalized and log2 transformed
+# If values exceeded 16, log2 transform here: exprs(gse) <- log2(exprs(gse))
 
-# Boxplot to confirm distributions are similar across samples (normalised)
+# Boxplot to confirm distributions are similar across samples (normalized)
 boxplot(exprs(gse), outline = FALSE, main = "Expression distribution per sample")
 
-# ---- Inspect the clinical variables ----
+# Inspect the clinical variables
 
 sampleInfo <- pData(gse)
 head(sampleInfo)
@@ -40,8 +40,8 @@ head(sampleInfo)
 table(sampleInfo$title)
 
 # Build group variable
-# NOTE: non-smoker must be checked before smoker because "non-smoker"
-# contains the substring "smoker" — wrong order misclassifies 53 samples
+# ** non-smoker must be checked before smoker because "non-smoker"
+# contains the substring "smoker", wrong order misclassifies 53 samples
 
 sampleInfo$group <- ""
 
